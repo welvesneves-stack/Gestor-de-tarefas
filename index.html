@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de tarefas</title>
+    <link rel="stylesheet" href="/Gestor de tarefas/css/gestor-de-tarefas.css">
+</head>
+
+<body>
+    <!-- 
+    Funçionabilidades
+
+    => Adicionar uma tarefa;
+    => Mostrar tarefa na página;
+    => Marcar uma tarefa como concluída;
+    => Voltar a marcar como pendente;
+    => Eliminar uma tarefa;
+    => Editar uma tarefa;
+    => Mostrar quantas tarefas existem;
+    => Mostrar quantas estão concluídas;
+    => Mostrar quantas estão pendentes;
+    => Filtrar entre Todas/pendentes/Concluídas;
+    => Impedir o envio de tarefas vazias;
+    => permitir limpar todas as tarefas.
+    -->
+
+    <main>
+        <!--Título-->
+
+        <head>
+            <h1>Gestor de Tarefas</h1>
+        </head>
+        <!--Tarefas-->
+        <article>
+            <div class="Caixa1">
+                <div>
+                    <label for="tarefa">Adicionar tarefas</label> <br>
+                    <input type="text" name="" id="tarefa" required accesskey="i">
+                </div>
+                <div class="botoes">
+                    <button id="adicionarbtn" accesskey="t">Adicionar</button>
+                    <button id="removerbtn" accesskey="r">Remover</button>
+                    <button id="editarbtn" accesskey="w">Editar</button>
+                </div>
+            </div>
+        </article>
+        <!--Filtros-->
+        <article>
+            <div class="filtros">
+                <div>
+                    <label for="total" class="fil">Total:</label>
+                    <output id="total">0</output>
+                </div>
+                <div>
+                    <label for="concluidas" class="fil">Concluídas</label>
+                    <output id="concluidas">0</output>
+                </div>
+                <div>
+                    <label for="pendentes" class="fil">Pendentes</label>
+                    <output id="pendentes">0</output>
+                </div>
+                <div>
+                    <label for="filtro" class="fil">Filtrar por:</label>
+                    <select name="" id="filtro">
+                        <option value="todas" id="seltodas">Todas</option>
+                        <option value="Concluídas" id="selconcluídas">Concluídas</option>
+                        <option value="Pendentes"  id="selpendentes">Pendentes</option>
+                    </select>
+                </div>
+            </div>
+        </article>
+        <!--Visualização-->
+        <article>
+            <h2><span>Tare</span><span class="spanPreto">fas</span></h2>
+            <div id="res" class="res">
+            </div>
+        </article>
+        <!--Rodapé-->
+        <footer>
+            <span>Gestor-de-tarefas &copy; 2026</span><br>
+            <span>WelvesNeves</span>
+        </footer>
+    </main>
+</body>
+<script type="module" src="/Gestor de tarefas/javascript/app.js"></script>
+
+</html>
